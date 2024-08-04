@@ -11,10 +11,6 @@
         // zmk,matrix_transform = &five_column_transform;
     };
 
-    &lt {
-        tapping-term-ms = <200>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
