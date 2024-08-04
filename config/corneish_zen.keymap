@@ -11,14 +11,6 @@
         // zmk,matrix_transform = &five_column_transform;
     };
 
-    behaviors {
-        td_0: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt - LWR CAPSLOCK>;
-        };
-    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,7 +27,7 @@
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y     &kp U      &kp I      &kp O    &kp P     &kp ESCAPE
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G      &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
-                         &kp LGUI  &mo 1  &kp RET    &kp BSPC  &kp SPACE  &mo 2
+                         &kp LGUI  &lt LOWER MINUS  &kp RET    &kp BSPC  &kp SPACE  &mo 2
             >;
         };
 
