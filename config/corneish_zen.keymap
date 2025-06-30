@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+hjj#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -64,11 +64,13 @@
         raise_layer {
             label = "SYMBOL";
 
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+                                // -----------------------------------------------------------------------------------------
+                    // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+                    // |CTRL  |     |     |MUTE |VOL- |VOL+ |   | ←   | ↓   | ↑   | →   |BRI  |EFF   |
+                    // |SHFT  |     |     |     |BRI- |BRI+ |   |  _  |  +  |  {  |  }  |BRD  |TOG   |
+                    //                | GUI |     | SPC | ENT |     | ALT |
+                    // -----------------------------------------------------------------------------------------
+
 
             bindings = <
 &kp TAB    &kp F1  &kp F2  &kp F3      &kp F4                &kp F5                  &kp F6     &kp F7    &kp F8    &kp F9     &bt BT_SEL 0     &bt BT_CLR
